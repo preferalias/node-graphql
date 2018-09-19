@@ -1,0 +1,31 @@
+{
+  "development": {
+    "DB_URI" : "mysql://root:password@localhost:3306/sample_ecom"
+  },
+
+  "test": {
+    "DB_URI" : ""
+  },
+
+  "production": {
+    "DB_URI" : ""
+  },
+ 
+  "corsOptions": {
+    "origin": "http://localhost:8080",
+    "credentials": true,
+    "methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "allowedHeaders": "Origin, X-Requested-With, X-AUTHENTICATION, X-IP, Content-Type, Accept, Authorization"
+  },
+
+  "sessionOptions" : {
+    "cookie" : {
+      "httpOnly" : false,
+      "secure" : false
+    },
+    "secret": "our-secret",
+    "resave": true,
+    "saveUninitialized": true
+  }
+
+}

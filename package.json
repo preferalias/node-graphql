@@ -1,0 +1,39 @@
+{
+  "name": "project-graphql",
+  "version": "1.0.0",
+  "description": "Example project for graphql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node app.js",
+    "build": "babel -d ./build ./server.js",
+    "rollup": "./node_modules/.bin/rollup -c"
+  },
+  "author": "Tatpon Poonampai",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.0.7",
+    "babel": "^6.23.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "merge-graphql-schemas": "^1.5.4",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.38.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
